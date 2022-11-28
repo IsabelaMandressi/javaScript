@@ -1,0 +1,89 @@
+@media screen and (min-width: 500px){
+    .linksDirectos{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .panuelosButton, .printsButton, .totesButton{
+        box-sizing: content-box;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 0em;
+    }
+    .totesButton{
+        margin-top: 2em;
+        margin-left: 0.2em;
+    }
+    .panuelosButton{
+        margin-right: 0em;
+    }
+    .printsButton{
+        margin-left: 0.5em;
+    }
+    .toteBagImg, .panuelosImg {
+        width: 13em;
+        height: 16.2em;
+        }
+    .serieBrote, .toteCatalogue, .panueloCatalogue, .polerasCatalogue, .serieSalitre, .serieLejos{
+        display:grid;
+        grid-template-columns:repeat(2, 1fr)
+    }
+    .serieBrote, .serieLejos, .serieSalitre{
+        img{
+            margin: 0.3em;
+            width: 15em;
+            height: 10em;
+        }
+    }
+    p{
+        font-size: 1.2em;
+    }
+    h1{
+        font-size: 3em;
+        margin-bottom: 1em;
+    }
+    h2{
+        font-size: 2.5em;
+    }
+    #formGroupInputFour{
+        height: 10em;
+    }
+    .form-control{
+        width: 15em;
+    }
+}
+@media screen and (min-width: 700px){
+    .serieBrote, .serieLejos, .serieSalitre{
+        img{
+            margin: 0.5em;
+            width: 20em;
+            height: 13em;
+        }  
+    }
+}
+@media screen and (min-width: 768px){
+    .toteBagImg, .panuelosImg {
+        width: 17em;
+        height: 21.2em;
+        }
+.toteCatalogue, .panueloCatalogue, .polerasCatalogue{
+        display:grid;
+        grid-template-columns:repeat(3, 1fr)
+    }
+    .panuelosButton:hover{
+        background-image: url(../img/panuelosHover.jpg);
+    }
+    .totesButton:hover{
+        background-image: url(../img/toteBagsHover.jpg);
+    }
+    .printsButton:hover{
+        background-image: url(../img/printsHover.jpg);
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .serieBrote, .serieLejos, .serieSalitre{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
