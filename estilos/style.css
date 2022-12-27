@@ -271,53 +271,6 @@ h1 {
      border-image: none;
 }
 
-.cuerpoTela .impresionEnTela {
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
-}
-.cuerpoTela .impresionEnTela h1 {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-.cuerpoTela .impresionEnTela p {
-  width: 80%;
-}
-.cuerpoTela h2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  text-align: center;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-.cuerpoTela .telaDescription {
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
-}
-.cuerpoTela .telaDescription p {
-  width: 80%;
-}
-.cuerpoTela section {
-  margin: 2em;
-}
-.cuerpoTela section img {
-  width: 16em;
-  height: 24em;
-  padding: 1em;
-  transition-property: all;
-  transition-duration: 5s;
-}
-
-.toteCatalogue, .panueloCatalogue, .paperCatalogue {
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
-}
-
 .cuerpoContacto {
   display: flex;
   flex-direction: column;
@@ -325,6 +278,124 @@ h1 {
   justify-content: center;
   transition-property: all;
   transition-duration: 5s;
+}
+.cuerpoContacto .comprarProductos {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  margin-top: 0em;
+}
+.cuerpoContacto .comprarProductos .unProducto {
+  margin-top: 10em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20em;
+  height: 35em;
+  border-color: palevioletred;
+  border-radius: 0em;
+  border-width: 0.2em;
+}
+.cuerpoContacto .comprarProductos .unProducto img {
+  width: 16em;
+  height: 33em;
+  transition-property: all;
+  transition-duration: 5s;
+}
+.cuerpoContacto .comprarProductos .unProducto div {
+  width: 16em;
+  height: 15em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-color: palevioletred;
+  border-radius: 0em;
+  border-width: 0.2em;
+}
+.cuerpoContacto .comprarProductos .unProducto h3 {
+  font-size: 1em;
+  font-family: "Oswald", sans-serif;
+  color: black;
+  margin: 1em;
+}
+.cuerpoContacto .comprarProductos .unProducto p {
+  font-size: 0, 8em;
+  font-family: "Source Sans Pro", sans-serif;
+  color: black;
+  margin: 0;
+  padding-bottom: 0.2em;
+}
+.cuerpoContacto .comprarProductos .unProducto p {
+  margin: 0;
+  font-size: 0, 8em;
+  font-family: "Source Sans Pro", sans-serif;
+  color: black;
+  padding-bottom: 0.2em;
+}
+.cuerpoContacto .comprarProductos .unProducto button {
+  font-family: "Oswald", sans-serif;
+  color: black;
+  font-size: 1em;
+  background-color: palevioletred;
+}
+.cuerpoContacto .carritoDeCompras {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  margin-top: 0em;
+}
+.cuerpoContacto .carritoDeCompras .unProducto {
+  margin-top: 10em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20em;
+  height: 35em;
+  border-color: palevioletred;
+  border-radius: 0em;
+  border-width: 0.2em;
+}
+.cuerpoContacto .carritoDeCompras .unProducto img {
+  width: 16em;
+  height: 33em;
+  transition-property: all;
+  transition-duration: 5s;
+}
+.cuerpoContacto .carritoDeCompras .unProducto div {
+  width: 16em;
+  height: 15em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-color: palevioletred;
+  border-radius: 0em;
+  border-width: 0.2em;
+}
+.cuerpoContacto .carritoDeCompras .unProducto h3 {
+  font-size: 1em;
+  font-family: "Oswald", sans-serif;
+  color: black;
+  margin: 1em;
+}
+.cuerpoContacto .carritoDeCompras .unProducto p {
+  font-size: 0, 8em;
+  font-family: "Source Sans Pro", sans-serif;
+  color: black;
+  margin: 0;
+  padding-bottom: 0.2em;
+}
+.cuerpoContacto .carritoDeCompras .unProducto p {
+  margin: 0;
+  font-size: 0, 8em;
+  font-family: "Source Sans Pro", sans-serif;
+  color: black;
+  padding-bottom: 0.2em;
+}
+.cuerpoContacto .carritoDeCompras .unProducto button {
+  font-family: "Oswald", sans-serif;
+  color: black;
+  font-size: 1em;
+  background-color: palevioletred;
 }
 .cuerpoContacto form {
   display: flex;
@@ -365,15 +436,11 @@ h1 {
   .printsButton {
     margin-left: 0.5em;
   }
-  .toteBagImg, .panuelosImg {
-    width: 13em;
-    height: 16.2em;
-  }
-  .serieBrote, .toteCatalogue, .panueloCatalogue, .polerasCatalogue, .serieSalitre, .serieLejos {
+  .unProducto {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  .serieBrote img, .serieLejos img, .serieSalitre img {
+  .unProducto img {
     margin: 0.3em;
     width: 15em;
     height: 10em;
@@ -396,20 +463,19 @@ h1 {
   }
 }
 @media screen and (min-width: 700px) {
-  .serieBrote img, .serieLejos img, .serieSalitre img {
+  .unProducto img {
     margin: 0.5em;
     width: 20em;
     height: 13em;
   }
 }
 @media screen and (min-width: 768px) {
-  .toteBagImg, .panuelosImg {
-    width: 17em;
-    height: 21.2em;
-  }
-  .toteCatalogue, .panueloCatalogue, .polerasCatalogue {
+  .unProducto {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+  .botonComprar:hover {
+    background-color: gold;
   }
   .panuelosButton:hover {
     background-image: url(../img/panuelosHover.jpg);
@@ -422,7 +488,7 @@ h1 {
   }
 }
 @media screen and (min-width: 1000px) {
-  .serieBrote, .serieLejos, .serieSalitre {
+  .unProducto {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }

@@ -1,28 +1,162 @@
 @import"vars";
-.cuerpoContacto{
+
+.cuerpoContacto {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition-property: all;
     transition-duration: 5s;
-    form{
+
+    .comprarProductos {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        margin-top: 0em;
+
+        .unProducto {
+            margin-top: 10em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 20em;
+            height: 35em;
+            border-color: palevioletred;
+            border-radius: 0em;
+            border-width: 0.2em;
+
+            img {
+                width: 16em;
+                height: 33em;
+                transition-property: all;
+                transition-duration: 5s;
+            }
+
+            div {
+                width: 16em;
+                height: 15em;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border-color: palevioletred;
+                border-radius: 0em;
+                border-width: 0.2em;
+            }
+
+            h3 {
+                font-size: 1em;
+                font-family: $fontTitulo;
+                color: black;
+                margin: 1em;
+            }
+
+            p {
+                font-size: 0, 8em;
+                font-family: $fontParrafo;
+                color: black;
+                margin: 0;
+                padding-bottom: 0.2em;
+            }
+
+            p {
+                margin: 0;
+                font-size: 0, 8em;
+                font-family: $fontParrafo;
+                color: black;
+                padding-bottom: 0.2em;
+            }
+
+            button {
+                font-family: $fontTitulo;
+                color: black;
+                font-size: 1em;
+                background-color: palevioletred;
+            }
+        }
+    }
+
+    .carritoDeCompras {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        margin-top: 0em;
+
+        .unProducto {
+            margin-top: 10em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 20em;
+            height: 35em;
+            border-color: palevioletred;
+            border-radius: 0em;
+            border-width: 0.2em;
+
+            img {
+                width: 16em;
+                height: 33em;
+                transition-property: all;
+                transition-duration: 5s;
+            }
+
+            div {
+                width: 16em;
+                height: 15em;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border-color: palevioletred;
+                border-radius: 0em;
+                border-width: 0.2em;
+            }
+
+            h3 {
+                font-size: 1em;
+                font-family: $fontTitulo;
+                color: black;
+                margin: 1em;
+            }
+
+            p {
+                font-size: 0, 8em;
+                font-family: $fontParrafo;
+                color: black;
+                margin: 0;
+                padding-bottom: 0.2em;
+            }
+
+            p {
+                margin: 0;
+                font-size: 0, 8em;
+                font-family: $fontParrafo;
+                color: black;
+                padding-bottom: 0.2em;
+            }
+
+            button {
+                font-family: $fontTitulo;
+                color: black;
+                font-size: 1em;
+                background-color: palevioletred;
+            }
+        }
+    }
+
+    form {
         display: flex;
         flex-direction: column;
         justify-content: left;
         align-items: center;
         width: 8em;
         font-family: $fontTitulo;
-        font-size:1em ;
+        font-size: 1em;
         border-style: none;
-        background-color:none;
+        background-color: none;
         margin-bottom: 6em;
         margin-top: 3em;
-        #formGroupInputFour{
+
+        #formGroupInputFour {
             height: 6em;
         }
     }
 }
-
-
-

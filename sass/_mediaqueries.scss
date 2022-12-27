@@ -20,15 +20,12 @@
     .printsButton{
         margin-left: 0.5em;
     }
-    .toteBagImg, .panuelosImg {
-        width: 13em;
-        height: 16.2em;
-        }
-    .serieBrote, .toteCatalogue, .panueloCatalogue, .polerasCatalogue, .serieSalitre, .serieLejos{
+    
+    .unProducto{
         display:grid;
-        grid-template-columns:repeat(2, 1fr)
+        grid-template-columns:repeat(2, 1fr)  
     }
-    .serieBrote, .serieLejos, .serieSalitre{
+    .unProducto{
         img{
             margin: 0.3em;
             width: 15em;
@@ -53,7 +50,7 @@
     }
 }
 @media screen and (min-width: 700px){
-    .serieBrote, .serieLejos, .serieSalitre{
+    .unProducto{
         img{
             margin: 0.5em;
             width: 20em;
@@ -62,13 +59,12 @@
     }
 }
 @media screen and (min-width: 768px){
-    .toteBagImg, .panuelosImg {
-        width: 17em;
-        height: 21.2em;
-        }
-.toteCatalogue, .panueloCatalogue, .polerasCatalogue{
+    .unProducto{
         display:grid;
         grid-template-columns:repeat(3, 1fr)
+    }
+    .botonComprar:hover{
+        background-color: gold;
     }
     .panuelosButton:hover{
         background-image: url(../img/panuelosHover.jpg);
@@ -82,8 +78,9 @@
 }
 
 @media screen and (min-width: 1000px){
-    .serieBrote, .serieLejos, .serieSalitre{
+    .unProducto{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
+
 }
