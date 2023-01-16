@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Antonio:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Romanesco&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 * {
   margin: 0;
@@ -276,142 +278,153 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition-property: all;
-  transition-duration: 5s;
+  background-color: white;
 }
-.cuerpoContacto .comprarProductos {
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
-  margin-top: 0em;
+.cuerpoContacto h1 {
+  font-family: "Bebas Neue";
+  font-size: 5em;
+  color: black;
+  margin-bottom: 1em;
 }
-.cuerpoContacto .comprarProductos .unProducto {
-  margin-top: 10em;
+.cuerpoContacto h2 {
+  font-family: "Romanesco", cursive;
+  font-size: 4em;
+  color: palevioletred;
+  letter-spacing: 0.2em;
+}
+.cuerpoContacto .catalogoProductos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.cuerpoContacto .unProducto {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 20em;
-  height: 35em;
-  border-color: palevioletred;
-  border-radius: 0em;
-  border-width: 0.2em;
+  justify-content: center;
+  margin: 3em;
 }
-.cuerpoContacto .comprarProductos .unProducto img {
+.cuerpoContacto .unProducto img {
   width: 16em;
-  height: 33em;
-  transition-property: all;
-  transition-duration: 5s;
+  height: 26;
 }
-.cuerpoContacto .comprarProductos .unProducto div {
+.cuerpoContacto .unProducto .datosProducto {
   width: 16em;
-  height: 15em;
+  height: 5em;
+  margin-top: 1em;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-color: palevioletred;
-  border-radius: 0em;
-  border-width: 0.2em;
-}
-.cuerpoContacto .comprarProductos .unProducto h3 {
-  font-size: 1em;
-  font-family: "Oswald", sans-serif;
-  color: black;
-  margin: 1em;
-}
-.cuerpoContacto .comprarProductos .unProducto p {
-  font-size: 0, 8em;
-  font-family: "Source Sans Pro", sans-serif;
-  color: black;
-  margin: 0;
-  padding-bottom: 0.2em;
-}
-.cuerpoContacto .comprarProductos .unProducto p {
-  margin: 0;
-  font-size: 0, 8em;
-  font-family: "Source Sans Pro", sans-serif;
-  color: black;
-  padding-bottom: 0.2em;
-}
-.cuerpoContacto .comprarProductos .unProducto button {
-  font-family: "Oswald", sans-serif;
-  color: black;
-  font-size: 1em;
-  background-color: palevioletred;
-}
-.cuerpoContacto .carritoDeCompras {
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
-  margin-top: 0em;
-}
-.cuerpoContacto .carritoDeCompras .unProducto {
-  margin-top: 10em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 20em;
-  height: 35em;
-  border-color: palevioletred;
-  border-radius: 0em;
-  border-width: 0.2em;
-}
-.cuerpoContacto .carritoDeCompras .unProducto img {
-  width: 16em;
-  height: 33em;
-  transition-property: all;
-  transition-duration: 5s;
-}
-.cuerpoContacto .carritoDeCompras .unProducto div {
-  width: 16em;
-  height: 15em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-color: palevioletred;
-  border-radius: 0em;
-  border-width: 0.2em;
-}
-.cuerpoContacto .carritoDeCompras .unProducto h3 {
-  font-size: 1em;
-  font-family: "Oswald", sans-serif;
-  color: black;
-  margin: 1em;
-}
-.cuerpoContacto .carritoDeCompras .unProducto p {
-  font-size: 0, 8em;
-  font-family: "Source Sans Pro", sans-serif;
-  color: black;
-  margin: 0;
-  padding-bottom: 0.2em;
-}
-.cuerpoContacto .carritoDeCompras .unProducto p {
-  margin: 0;
-  font-size: 0, 8em;
-  font-family: "Source Sans Pro", sans-serif;
-  color: black;
-  padding-bottom: 0.2em;
-}
-.cuerpoContacto .carritoDeCompras .unProducto button {
-  font-family: "Oswald", sans-serif;
-  color: black;
-  font-size: 1em;
-  background-color: palevioletred;
-}
-.cuerpoContacto form {
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  align-items: center;
-  width: 8em;
-  font-family: "Oswald", sans-serif;
-  font-size: 1em;
   border-style: none;
-  background-color: none;
-  margin-bottom: 6em;
-  margin-top: 3em;
 }
-.cuerpoContacto form #formGroupInputFour {
-  height: 6em;
+.cuerpoContacto .unProducto .datosProducto h3 {
+  font-family: "Oswald", sans-serif;
+  color: palevioletred;
+  font-size: 1em;
+}
+.cuerpoContacto .unProducto .datosProducto p {
+  font-family: "Source Sans Pro", sans-serif;
+  color: black;
+  font-size: large;
+  height: 1em;
+  margin-top: 0em;
+  margin-bottom: 0.3em;
+}
+.cuerpoContacto .unProducto .datosProducto button {
+  background-color: palevioletred;
+  font-family: "Oswald", sans-serif;
+  color: white;
+  width: 16em;
+  height: 3em;
+  border: none;
+}
+.cuerpoContacto .carrito {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.cuerpoContacto .carrito .consolaCarrito {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.cuerpoContacto .carrito .consolaCarrito button {
+  background-color: palevioletred;
+  font-family: "Oswald", sans-serif;
+  color: white;
+}
+.cuerpoContacto .carrito .carritoDeCompras .unProductoCarrito {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 3em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 10em;
+}
+.cuerpoContacto .carrito .carritoDeCompras .unProductoCarrito img {
+  width: 16em;
+  height: 26;
+}
+.cuerpoContacto .carrito .carritoDeCompras .unProductoCarrito .datosProductoCarrito {
+  width: 16em;
+  height: 8em;
+  margin: 0em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-style: none;
+  box-sizing: content-box;
+}
+.cuerpoContacto .carrito .carritoDeCompras .unProductoCarrito .datosProductoCarrito h3 {
+  font-family: "Oswald", sans-serif;
+  color: palevioletred;
+  font-size: 1em;
+  margin: 2em;
+  border-style: none;
+}
+.cuerpoContacto .carrito .carritoDeCompras .unProductoCarrito .datosProductoCarrito p {
+  font-family: "Source Sans Pro", sans-serif;
+  color: black;
+  font-size: large;
+  height: 1em;
+  margin-top: 0em;
+  margin-bottom: 0.3em;
+  border-style: none;
+}
+.cuerpoContacto .carrito .carritoDeCompras .unProductoCarrito .datosProductoCarrito button {
+  background-color: palevioletred;
+  font-family: "Oswald", sans-serif;
+  color: white;
+  width: 16em;
+  height: 3em;
+  border: none;
+}
+.cuerpoContacto .carrito h4 {
+  font-family: "Oswald", sans-serif;
+  color: black;
+  font-size: x-large;
+  margin-left: 1em;
+}
+.cuerpoContacto .carrito .botonComprar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.cuerpoContacto .carrito .botonComprar button {
+  background-color: black;
+  font-family: "Oswald", sans-serif;
+  color: white;
+  width: 10em;
+  height: 3em;
+  border: none;
+  margin-bottom: 5em;
+  margin-top: 3em;
 }
 
 @media screen and (min-width: 500px) {
@@ -436,14 +449,21 @@ h1 {
   .printsButton {
     margin-left: 0.5em;
   }
-  .unProducto {
+  .catalogoProductos {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
   }
-  .unProducto img {
-    margin: 0.3em;
-    width: 15em;
-    height: 10em;
+  .unProducto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .unProductoCarrito {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
   }
   p {
     font-size: 1.2em;
@@ -457,16 +477,6 @@ h1 {
   }
   #formGroupInputFour {
     height: 10em;
-  }
-  .form-control {
-    width: 15em;
-  }
-}
-@media screen and (min-width: 700px) {
-  .unProducto img {
-    margin: 0.5em;
-    width: 20em;
-    height: 13em;
   }
 }
 @media screen and (min-width: 768px) {
@@ -487,9 +497,25 @@ h1 {
     background-image: url(../img/printsHover.jpg);
   }
 }
-@media screen and (min-width: 1000px) {
-  .unProducto {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
+.registroCliente {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.registroCliente .datosDeCompra {
+  color: black;
+}
+.registroCliente .formRegistro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.registroCliente .formRegistro label {
+  color: black;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.registroCliente .formRegistro button {
+  margin-top: 1em;
+  margin-bottom: 5em;
 }/*# sourceMappingURL=style.css.map */

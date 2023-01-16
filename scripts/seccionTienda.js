@@ -71,7 +71,7 @@ const mostrarProductos = () => {
         card.innerHTML = `
             <div class="card unProducto">
                 <img src="../${producto.img}" class="card-img-top imgProductos alt="${producto.nombre}">
-                <div class="card body">
+                <div class="card body datosProducto">
                     <h3 class="card-title">${producto.nombre}</h3>
                     <p class="card-text">$${producto.precio}</p>
                     <p class="card-text">${producto.cantidad}</p>
@@ -117,9 +117,9 @@ const mostrarCarrito = () => {
     carrito.forEach((producto)=> {
         const card = document.createElement("div");
         card.innerHTML = `
-            <div class="card unProducto">
+            <div class="card unProductoCarrito">
                 <img src="../${producto.img}" class="card-img-top imgProductos alt="${producto.nombre}">
-                <div class="card body">
+                <div class="card body datosProductoCarrito">
                     <h3 class="card-title">${producto.nombre}</h3>
                     <p class="card-text">$${producto.precio}</p>
                     <p class="card-text">${producto.cantidad}</p>
@@ -161,5 +161,5 @@ const calcularTotal = () => {
     carrito.forEach((producto) => {
         totalCompra += producto.precio * producto.cantidad;
     })
-    total.innerHTML= `Total: $${totalCompra}`;
+    total.innerHTML= `$${totalCompra}`;
 }

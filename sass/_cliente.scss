@@ -1,0 +1,23 @@
+.registroCliente{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    .datosDeCompra{
+        color: black;
+    }
+    .formRegistro{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        label{
+            color: black;
+            font-family: $fontParrafo;
+        }
+        button{
+            margin-top: 1em;
+            margin-bottom: 5em;
+        }
+    }
+}
+

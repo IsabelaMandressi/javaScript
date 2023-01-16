@@ -1,162 +1,154 @@
-@import"vars";
-
-.cuerpoContacto {
+.cuerpoContacto{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition-property: all;
-    transition-duration: 5s;
-
-    .comprarProductos {
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-items: center;
-        margin-top: 0em;
-
-        .unProducto {
-            margin-top: 10em;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 20em;
-            height: 35em;
-            border-color: palevioletred;
-            border-radius: 0em;
-            border-width: 0.2em;
-
-            img {
-                width: 16em;
-                height: 33em;
-                transition-property: all;
-                transition-duration: 5s;
-            }
-
-            div {
-                width: 16em;
-                height: 15em;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                border-color: palevioletred;
-                border-radius: 0em;
-                border-width: 0.2em;
-            }
-
-            h3 {
-                font-size: 1em;
-                font-family: $fontTitulo;
-                color: black;
-                margin: 1em;
-            }
-
-            p {
-                font-size: 0, 8em;
-                font-family: $fontParrafo;
-                color: black;
-                margin: 0;
-                padding-bottom: 0.2em;
-            }
-
-            p {
-                margin: 0;
-                font-size: 0, 8em;
-                font-family: $fontParrafo;
-                color: black;
-                padding-bottom: 0.2em;
-            }
-
-            button {
-                font-family: $fontTitulo;
-                color: black;
-                font-size: 1em;
-                background-color: palevioletred;
-            }
-        }
+    background-color: white;
+    h1{
+        font-family: 'Bebas Neue';
+        font-size: 5em;
+        color: black;
+        margin-bottom: 1em;
     }
-
-    .carritoDeCompras {
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-items: center;
-        margin-top: 0em;
-
-        .unProducto {
-            margin-top: 10em;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 20em;
-            height: 35em;
-            border-color: palevioletred;
-            border-radius: 0em;
-            border-width: 0.2em;
-
-            img {
-                width: 16em;
-                height: 33em;
-                transition-property: all;
-                transition-duration: 5s;
-            }
-
-            div {
-                width: 16em;
-                height: 15em;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                border-color: palevioletred;
-                border-radius: 0em;
-                border-width: 0.2em;
-            }
-
-            h3 {
-                font-size: 1em;
-                font-family: $fontTitulo;
-                color: black;
-                margin: 1em;
-            }
-
-            p {
-                font-size: 0, 8em;
-                font-family: $fontParrafo;
-                color: black;
-                margin: 0;
-                padding-bottom: 0.2em;
-            }
-
-            p {
-                margin: 0;
-                font-size: 0, 8em;
-                font-family: $fontParrafo;
-                color: black;
-                padding-bottom: 0.2em;
-            }
-
-            button {
-                font-family: $fontTitulo;
-                color: black;
-                font-size: 1em;
-                background-color: palevioletred;
-            }
-        }
+    h2{
+        font-family: 'Romanesco', cursive;
+        font-size: 4em;
+        color:palevioletred;
+        letter-spacing: 0.2em;
     }
-
-    form {
+    .catalogoProductos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .unProducto{
         display: flex;
         flex-direction: column;
-        justify-content: left;
         align-items: center;
-        width: 8em;
-        font-family: $fontTitulo;
-        font-size: 1em;
-        border-style: none;
-        background-color: none;
-        margin-bottom: 6em;
-        margin-top: 3em;
-
-        #formGroupInputFour {
-            height: 6em;
+        justify-content: center;
+        margin: 3em;
+        img{
+            width: 16em;
+            height: 26;
+        }
+        .datosProducto{
+            width: 16em;
+            height: 5em;
+            margin-top: 1em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-style: none;
+            h3{
+                font-family: $fontTitulo;
+                color:$tituloColor;
+                font-size: 1em;
+            }
+            p{
+                font-family: $fontParrafo;
+                color:black;
+                font-size: large;
+                height: 1em;
+                margin-top: 0em;
+                margin-bottom: 0.3em;
+            }
+            button{
+                background-color: $tituloColor;
+                font-family: $fontTitulo;
+                color: white;
+                width: 16em;
+                height: 3em;
+                border: none;
+            }
+        }
+    }
+    .carrito{
+        display: flex;
+        flex-direction:column;
+        align-content: center;
+        .consolaCarrito{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            button{
+                background-color: palevioletred;
+                font-family: $fontTitulo;
+                color: white;
+                }    
+        }
+        .carritoDeCompras{
+            .unProductoCarrito{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin: 3em;
+                width: fit-content;
+                margin-bottom: 10em;
+                img{
+                    width: 16em;
+                    height: 26;
+                }
+                .datosProductoCarrito{
+                    width: 16em;
+                    height: 8em;
+                    margin: 0em;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    border-style: none;
+                    box-sizing: content-box;
+                    h3{
+                        font-family: $fontTitulo;
+                        color:$tituloColor;
+                        font-size: 1em;
+                        margin: 2em;
+                        border-style: none;
+                    }
+                    p{
+                        font-family: $fontParrafo;
+                        color:black;
+                        font-size: large;
+                        height: 1em;
+                        margin-top: 0em;
+                        margin-bottom: 0.3em;
+                        border-style: none;
+                    }
+                    button{
+                        background-color: $tituloColor;
+                        font-family: $fontTitulo;
+                        color: white;
+                        width: 16em;
+                        height: 3em;
+                        border: none;
+                    }
+                }
+            }
+        }
+        h4{
+            font-family: $fontTitulo;
+            color: black;  
+            font-size: x-large;
+            margin-left: 1em;
+        } 
+        .botonComprar{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            button{
+                background-color: black;
+                font-family: $fontTitulo;
+                color: white;
+                width: 10em;
+                height: 3em;
+                border: none;
+                margin-bottom: 5em;
+                margin-top: 3em;
+            }
         }
     }
 }
+
