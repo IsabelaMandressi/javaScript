@@ -5,15 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../estilos/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <meta name="description" content="Registro fotográfico autoral e impresión en diversos formatos">
+    <meta name="keywords" content="fotografía, arte, moda, arte gráfico, decoración, accesorios, ropa, prints">
+    <title>Carrito</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.1/dist/sweetalert2.min.css" rel="stylesheet"></link>
+    <link rel="stylesheet" href="/estilos/style.css">
 </head>
-
 <body>
     <div class="grillaGeneral">
         <header>
@@ -46,32 +44,35 @@
         </header>
         <main>
             <div class="cuerpoContacto">
-                <h1>Tienda</h1>
-                <h2>Nuestros productos</h2>
-                <button class="btn abrirCarrito" id="verCarrito" >
-                <a href="./carrito.html">Ver Carrito</a>
-                </button>
-                <hr>
-                <div class="comercial">
-                    <div id="contenedorProductos" class="catalogoProductos"></div>
-                    <hr>
+                <h1>Carrito de compras</h1>
+                <div class="carrito" id="carritoProductos">
+                    <div id="carritoDeCompras"></div>
+                    <div class="consolaCarrito">
+                        <button class="btn colorBoton" id="vaciarCarrito">Vaciar Carrito</button>
+                    </div>
+                    <h4>El total de la compra es de <span id="total"></span></h4>
+                    <div class="botonComprar">
+                        <button class="btn colorBoton" id="comprar">
+                            <a href="../secciones/cliente.html">Comprar</a>
+                        </button>
+                    </div>
                 </div>
             </div>
-        </main>
-        <footer>
-            <section class="redes">
-                <a href="https://instagram.com/is4_ph?igshid=YmMyMTA2M2Y=" target="_blank"><img
-                        src="../img/instagramIcon.png" alt="instagramIcon"></a>
-                <a href="https://wa.me/message/4DOJHH5FGI63C1" target="_blank"><img src="../img/whatsappIcon.png"
-                        alt="whatsappIcon"></a>
-            </section>
-            <section class="copyright">
-                <p>© Copyright 2022</p>
-            </section>
-        </footer>
     </div>
-    <script src="../scripts/seccionTienda.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    </main>
+    <footer>
+        <section class="redes">
+            <a href="https://instagram.com/is4_ph?igshid=YmMyMTA2M2Y=" target="_blank"><img
+                    src="../img/instagramIcon.png" alt="instagramIcon"></a>
+            <a href="https://wa.me/message/4DOJHH5FGI63C1" target="_blank"><img src="../img/whatsappIcon.png"
+                    alt="whatsappIcon"></a>
+        </section>
+        <section class="copyright">
+            <p>© Copyright 2022</p>
+        </section>
+    </footer>
+    </div>
+    <script src="../scripts/carrito.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>

@@ -1,0 +1,307 @@
+[
+    { 
+        "id" : 1, 
+        "nombre" : "Tote Bag - Inca Cola - Serie Lejos de casa", 
+        "precio":690,
+        "img": "./img/toteOne.jpg",
+        "categoria": "tote bag",
+        "cantidad":1
+    },
+    { 
+        "id" : 2, 
+        "nombre" : "Tote Bag - Ceviche al paso - Serie Lejos de casa", 
+        "precio":690,
+        "img": "./img/toteTwo.jpg",
+        "categoria": "tote bag",
+        "cantidad":1
+    },
+    { 
+        "id" : 3, 
+        "nombre" : "Tote Bag - Cumbia - Serie Menesteres", 
+        "precio":690,
+        "img": "./img/toteThree.jpg",
+        "categoria": "tote bag",
+        "cantidad":1
+    },
+    { 
+        "id" : 4, 
+        "nombre" : "Tote Bag - Amigas - Serie Menesteres", 
+        "precio":690,
+        "img": "./img/toteFour.jpg",
+        "categoria": "tote bag",
+        "cantidad":1
+    },
+    { 
+        "id" :5, 
+        "nombre" : "Tote Bag - Coco - Serie Lejos de casa", 
+        "precio":690,
+        "img": "./img/toteFive.jpg",
+        "categoria": "tote bag",
+        "cantidad":1
+    },
+    { 
+        "id" : 6, 
+        "nombre" : "Tote Bag - Garopaba - Serie Lejos de casa", 
+        "precio":690,
+        "img": "./img/toteSix.jpg",
+        "categoria": "tote bag",
+        "cantidad":1
+    },
+    { 
+        "id" : 7, 
+        "nombre" : "Tote Bag - Santiago - Serie Lejos de casa", 
+        "precio":690,
+        "img": "./img/toteSeven.jpg",
+        "categoria": "tote bag",
+        "cantidad":1
+    },
+    { 
+        "id" : 8, 
+        "nombre" : "Tote Bag - Plena - Serie Menesteres", 
+        "precio":690,
+        "img": "./img/toteEight.jpg",
+        "categoria": "tote bag",
+        "cantidad":1
+    },
+    { 
+        "id" : 9, 
+        "nombre" : "Tote Bag - Cuzco - Serie Lejos de casa", 
+        "precio":690,
+        "img": "./img/toteNine.jpg",
+        "categoria": "tote bag",
+        "cantidad":1
+    },
+    { 
+        "id" : 10, 
+        "nombre" : "Tote Bag - Cafecito - Serie Lejos de casa", 
+        "precio":690,
+        "img": "./img/toteTen.jpg",
+        "categoria": "tote bag",
+        "cantidad":1
+    },
+    { 
+        "id" : 11, 
+        "nombre" : "Tote Bag - Desayuno - Serie Menesteres", 
+        "precio":690,
+        "img": "./img/toteEleven.jpg",
+        "categoria": "tote bag",
+        "cantidad":1
+    },
+    { 
+        "id" : 12, 
+        "nombre" : "Tote Bag - Tabaquito- Serie Menesteres", 
+        "precio":690,
+        "img": "./img/toteTwelve.jpg",
+        "categoria": "tote bag",
+        "cantidad":1
+    },
+    { 
+        "id" : 13, 
+        "nombre" : "Tote Bag - Domingo - Serie Menesteres", 
+        "precio":690,
+        "img": "./img/toteThirteen.jpg",
+        "categoria": "tote bag",
+        "cantidad":1
+    },
+    { 
+        "id" : 14, 
+        "nombre" : "Tote Bag - Torta Fritas - Serie Lejos de casa", 
+        "precio":690,
+        "img": "./img/toteFourteen.jpg",
+        "categoria": "tote bag",
+        "cantidad":1
+    },
+    { 
+        "id" : 15, 
+        "nombre" : "Tote Bag - Noche - Serie Menesteres", 
+        "precio":690,
+        "img": "./img/toteFifteen.jpg",
+        "categoria": "tote bag",
+        "cantidad":1
+    },
+    { 
+        "id" : 16, 
+        "nombre" : "Tote Bag - Confites - Serie Lejos de casa", 
+        "precio":690,
+        "img": "./img/toteSixteen.jpg",
+        "categoria": "tote bag",
+        "cantidad":1
+    },
+    { 
+        "id" : 17, 
+        "nombre" : "Tote Bag - Aire de mar - Serie Salitre", 
+        "precio":690,
+        "img": "./img/toteSeventeen.jpg",
+        "categoria": "tote bag",
+        "cantidad":1
+    },
+    { 
+        "id" : 18, 
+        "nombre" : "Tote Bag - Olvido - Serie Salitre", 
+        "precio":690,
+        "img": "./img/toteEighteen.jpg",
+        "categoria": "tote bag",
+        "cantidad":1
+    },
+    { 
+        "id" : 19, 
+        "nombre" : "Tote Bag - Atardecer - Serie Salitre", 
+        "precio":690,
+        "img": "./img/toteNineteen.jpg",
+        "categoria": "tote bag",
+        "cantidad":1
+    },
+    { 
+        "id" : 20, 
+        "nombre" : "Tote Bag - Paraíso - Serie Salitre", 
+        "precio":690,
+        "img": "./img/toteTwenty.jpg",
+        "categoria": "tote bag",
+        "cantidad":1
+    },
+    { 
+        "id" : 21, 
+        "nombre" : "Tote Bag - Bela Infancia - Serie Salitre", 
+        "precio":690,
+        "img": "./img/toteTwentyOne.jpg",
+        "categoria": "tote bag",
+        "cantidad":1
+    },
+    { 
+        "id" : 22, 
+        "nombre" : "Tote Bag - Otoño - Serie Salitre", 
+        "precio":690,
+        "img": "./img/toteTwentyTwo.jpg",
+        "categoria": "tote bag",
+        "cantidad":1
+    },
+    { 
+        "id" : 23, 
+        "nombre" : "Tote Bag - Salitre - Serie Salitre", 
+        "precio":690,
+        "img": "./img/toteTwentyThree.jpg",
+        "categoria": "tote bag",
+        "cantidad":1
+    },
+    { 
+        "id" : 24, 
+        "nombre" : "Tote Bag - Lejano - Serie Salitre", 
+        "precio":690,
+        "img": "./img/toteTwentyFour.jpg",
+        "categoria": "tote bag",
+        "cantidad":1
+    },
+    { 
+        "id" : 25, 
+        "nombre" : "Pañuelo - Caracoles- Serie Salitre", 
+        "precio":990,
+        "img": "./img/panueloOne.jpg",
+        "categoria": "pañuelo",
+        "cantidad":1
+    },
+    { 
+        "id" : 26, 
+        "nombre" : "Pañuelo - Salitre- Serie Salitree", 
+        "precio":990,
+        "img": "./img/panueloTwo.jpg",
+        "categoria": "pañuelo",
+        "cantidad":1
+    },
+    { 
+        "id" : 27, 
+        "nombre" : "Pañuelo - Flor- Serie Brote", 
+        "precio":990,
+        "img": "./img/panueloThree.jpg",
+        "categoria": "pañuelo",
+        "cantidad":1
+    },
+    { 
+        "id" : 28, 
+        "nombre" : "Pañuelo - Hortensias- Serie Salitre", 
+        "precio":990,
+        "img": "./img/panueloFour.jpg",
+        "categoria": "pañuelo",
+        "cantidad":1
+    },
+    { 
+        "id" : 29, 
+        "nombre" : "Pañuelo - Bokita- Serie Lejos de casa", 
+        "precio":990,
+        "img": "./img/panueloFive.jpg",
+        "categoria": "pañuelo",
+        "cantidad":1
+    },
+    { 
+        "id" : 30, 
+        "nombre" : "Pañuelo - Cardos- Serie Brote", 
+        "precio":990,
+        "img": "./img/panueloSix.jpg",
+        "categoria": "pañuelo",
+        "cantidad":1
+    },
+    { 
+        "id" : 31, 
+        "nombre" : "Pañuelo - Otoño- Serie Brote", 
+        "precio":990,
+        "img": "./img/panueloSeven.jpg",
+        "categoria": "pañuelo",
+        "cantidad":1
+    },
+    { 
+        "id" : 32, 
+        "nombre" : "Pañuelo - Polen- Serie Brote", 
+        "precio":990,
+        "img": "./img/panueloEight.jpg",
+        "categoria": "pañuelo",
+        "cantidad":1
+    },
+    { 
+        "id" : 33, 
+        "nombre" : "Polera - Florista- Serie Lejos de casa", 
+        "precio":1690,
+        "img": "./img/poleraUnoDos.jpg",
+        "categoria": "polera",
+        "cantidad":1
+    },
+    { 
+        "id" : 34, 
+        "nombre" : "Polera - Cardos- Serie Brote", 
+        "precio":1690,
+        "img": "./img/poleraDosDos.jpg",
+        "categoria": "polera",
+        "cantidad":1
+    },
+    { 
+        "id" : 35, 
+        "nombre" : "Polera - Paraíso- Serie Salitre", 
+        "precio":1690,
+        "img": "./img/poleraTresDos.jpg",
+        "categoria": "polera",
+        "cantidad":1
+    },
+    { 
+        "id" : 36, 
+        "nombre" : "Polera - Caracoles- Serie Salitre", 
+        "precio":1690,
+        "img": "./img/poleraCuatroDos.jpg",
+        "categoria": "polera",
+        "cantidad":1
+    },
+    { 
+        "id" : 37, 
+        "nombre" : "Polera - Polen- Serie Brote", 
+        "precio":1690,
+        "img": "./img/poleraCincoDos.jpg",
+        "categoria": "polera",
+        "cantidad":1
+    },
+    { 
+        "id" : 38, 
+        "nombre" : "Polera - Cerezos- Serie Brote", 
+        "precio":1690,
+        "img": "./img/poleraSeisDos.jpg",
+        "categoria": "polera",
+        "cantidad":1
+    }
+]
+
