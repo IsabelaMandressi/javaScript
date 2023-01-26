@@ -355,7 +355,7 @@ h1 {
   font-family: "Oswald", sans-serif;
   color: white;
 }
-.cuerpoContacto .carrito .carritoDeCompras .unProductoCarrito {
+.cuerpoContacto .carrito .productosCarrito .unProductoCarrito {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -366,11 +366,11 @@ h1 {
   width: fit-content;
   margin-bottom: 10em;
 }
-.cuerpoContacto .carrito .carritoDeCompras .unProductoCarrito img {
+.cuerpoContacto .carrito .productosCarrito .unProductoCarrito img {
   width: 16em;
   height: 26;
 }
-.cuerpoContacto .carrito .carritoDeCompras .unProductoCarrito .datosProductoCarrito {
+.cuerpoContacto .carrito .productosCarrito .unProductoCarrito .datosProductoCarrito {
   width: 16em;
   height: 8em;
   margin: 0em;
@@ -380,14 +380,14 @@ h1 {
   border-style: none;
   box-sizing: content-box;
 }
-.cuerpoContacto .carrito .carritoDeCompras .unProductoCarrito .datosProductoCarrito h3 {
+.cuerpoContacto .carrito .productosCarrito .unProductoCarrito .datosProductoCarrito h3 {
   font-family: "Oswald", sans-serif;
   color: palevioletred;
   font-size: 1em;
   margin: 2em;
   border-style: none;
 }
-.cuerpoContacto .carrito .carritoDeCompras .unProductoCarrito .datosProductoCarrito p {
+.cuerpoContacto .carrito .productosCarrito .unProductoCarrito .datosProductoCarrito p {
   font-family: "Source Sans Pro", sans-serif;
   color: black;
   font-size: large;
@@ -396,7 +396,7 @@ h1 {
   margin-bottom: 0.3em;
   border-style: none;
 }
-.cuerpoContacto .carrito .carritoDeCompras .unProductoCarrito .datosProductoCarrito button {
+.cuerpoContacto .carrito .productosCarrito .unProductoCarrito .datosProductoCarrito button {
   background-color: palevioletred;
   font-family: "Oswald", sans-serif;
   color: white;
