@@ -1,16 +1,19 @@
-let carrito =JSON.parse(localStorage.getItem("carrito")) || [];
+const botonVaciar = document.getElementById("vaciarCarrito");
+const carritoDeCompras = document.getElementById("carritoDeCompras");
+const total = document.getElementById("total");
+let carrito =JSON.parse(localStorage.getItem('carrito')) || [];
 
-function mostrarCarrito(productos) {
-    carrito.forEach(productos => {
+function mostrarCarrito(carrito) {
+    carrito.forEach(producto => {
         let card = document.createElement("div");
         card.innerHTML = `
             <div class="card unProducto">
-                <img src="../${productos.img}" class="card-img-top imgProductos alt="${productos.nombre}">
+                <img src="../${producto.img}" class="card-img-top imgProductos alt="${producto.nombre}">
                 <div class="card body datosProducto">
-                    <h3 class="card-title">${productos.nombre}</h3>
-                    <p class="card-text">$${productos.precio}</p>
-                    <p class="card-text">${productos.cantidad}</p>
-                    <button class="eliminarDelCarrito btn colorBoton" id="${productos.id}"> Eliminar del Carrito <button>
+                    <h3 class="card-title">${producto.nombre}</h3>
+                    <p class="card-text">$${productoE.precio}</p>
+                    <p class="card-text">${producto.cantidad}</p>
+                    <button class="eliminarDelCarrito btn colorBoton" id="${producto.id}"> Eliminar del Carrito <button>
                 </div>
             </div>        
         `
@@ -18,7 +21,7 @@ function mostrarCarrito(productos) {
     })
     const botonEliminarDelCarrito = document.querySelectorAll(".eliminarDelCarrito");
     botonEliminarDelCarrito.forEach(btn => {
-        btn.addEventListener("click", (e) => eliminarDelCarrito(e, productos))
+        btn.addEventListener("click", (e) => eliminarDelCarrito(e, producto))
         
     })
 
@@ -27,33 +30,24 @@ mostrarCarrito()
 calcularTotal()
 
 
-
 function calcularTotal() {
     let totalCompra = 0;
-    carrito.forEach((productos) => {
-        totalCompra += productos.precio * productos.cantidad;
+    carrito.forEach((producto) => {
+        totalCompra += producto.precio * producto.cantidad;
     })
-    const total = document.getElementById("total");
     let factura = document.createElement("div");
     factura.innerHTML = `
-    <p>Total $${totalCompra}</p> 
-    `
+    <p>Total $${totalCompra}</p>`
     total.appendChild(factura);
 }
 
-
-
-
-
 function eliminarDelCarrito(e, carrito) {
     const index = carrito.findIndex(el => el.id === parseInt(e.target.id))
-    console.log(index)
     carrito.splice(index, 1);
     localStorage.seItem("carrito", JSON.stringify(carrito))
     mostrarCarrito();
 }
 
-const botonVaciar = document.getElementById("vaciarCarrito");
 botonVaciar.addEventListener("click", vaciarCarrito);
 
 

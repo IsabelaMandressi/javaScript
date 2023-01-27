@@ -1,7 +1,6 @@
 const verCarrito = document.getElementById("verCarrito");
-const botonVaciar = document.getElementById("vaciarCarrito");
-const carritoDeCompras = document.getElementById("carritoDeCompras");
-const total = document.getElementById("total");
+
+const contenedorProductos = document.getElementById("contenedorProductos");
 const botonComprar = document.getElementById("comprar");
 const url = "/productos.json"
 
@@ -11,9 +10,9 @@ fetch(url)
         mostrarProductos(data)
     )
 
-const contenedorProductos = document.getElementById("contenedorProductos");
-function mostrarProductos(productos) {
-    productos.forEach(prod => {
+
+function mostrarProductos(data) {
+    data.forEach(prod => {
         let card = document.createElement("div");
         card.innerHTML = `
             <div class="card unProducto">
@@ -27,28 +26,23 @@ function mostrarProductos(productos) {
         `
         contenedorProductos.appendChild(card);
     })
-    const botonAgregarAlCarrito = document.querySelectorAll(".agregarAlCarrito");
+    const botonAgregarAlCarrito = document.querySelectorAll('.agregarAlCarrito');
     botonAgregarAlCarrito.forEach(btn => {
-        btn.addEventListener("click", (e) => agregarAlCarrito(e, productos))
+        btn.addEventListener("click", (e) => agregarAlCarrito(e.target.id, data))
         
     })
-
 }
+let carrito =JSON.parse(localStorage.getItem("carrito")) || [];
 
-
-let carrito =[];
-
-function agregarAlCarrito(e, prods) {
-    const productoElegido = prods.find(el => el.id === parseInt(e.target.id));
-    console.log(productoElegido)
-    if(productoElegido){
-        productoElegido.cantidad++
-        carrito.push(productoElegido)
-        localStorage.setItem("carrito", JSON.stringify(carrito))
-    }
-    else{
+function agregarAlCarrito(id, data) {
+    let productoElegido = data.find(el => el.id === parseInt(id));
+    let productoEnCarrito = carrito.find((el => el.id === id))
+    if(productoEnCarrito){
+        productoEnCarrito.cantidad++;
+    }else{
         carrito.push(productoElegido);
-        localStorage.setItem("carrito", JSON.stringify(carrito))
     }
+    localStorage.setItem(carrito, "carrito")
     }
+
 
