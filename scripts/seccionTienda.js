@@ -21,7 +21,6 @@ function mostrarProductos(productos) {
                 <div class="card body datosProducto">
                     <h3 class="card-title">${prod.nombre}</h3>
                     <p class="card-text">$${prod.precio}</p>
-                    <p class="card-text">${prod.cantidad}</p>
                     <button class="agregarAlCarrito btn colorBoton" id="${prod.id}"> Agregar al carrito<button>
                 </div>
             </div>        
