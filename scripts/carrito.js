@@ -5,6 +5,7 @@ const total = document.getElementById("total");
 let carrito =JSON.parse(localStorage.getItem('carrito')) || [];
 
 function mostrarCarrito() {
+    carritoDeCompras.innerHTML = "";
     carrito.forEach(producto => {
         let card = document.createElement("div");
         card.innerHTML = `
@@ -22,7 +23,7 @@ function mostrarCarrito() {
     })
     const botonEliminarDelCarrito = document.querySelectorAll('.eliminarDelCarrito');
     botonEliminarDelCarrito.forEach(btn => {
-        btn.addEventListener("click", (e) => eliminarDelCarrito(parseInt(e.target.id)))
+        btn.addEventListener("click", (e) => eliminarDelCarrito(e.target.id))
         
     })
 
