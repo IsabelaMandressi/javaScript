@@ -36,13 +36,13 @@ let carrito =JSON.parse(localStorage.getItem("carrito")) || [];
 
 function agregarAlCarrito(id, data) {
     let productoElegido = data.find(el => el.id === parseInt(id));
-    let productoEnCarrito = carrito.find((el => el.id === id))
+    let productoEnCarrito = carrito.find(el => el.id === parseInt(id))
     if(productoEnCarrito){
         productoEnCarrito.cantidad++;
     }else{
         carrito.push(productoElegido);
     }
-    localStorage.setItem(carrito, "carrito")
+    localStorage.setItem( "carrito", JSON.stringify(carrito))
     }
 
 
